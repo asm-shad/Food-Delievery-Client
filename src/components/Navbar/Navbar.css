@@ -238,6 +238,7 @@
 .lightcolors .signbutton {
   color: #49557e;
 }
+  */
 
 @media (max-width: 1050px) {
   .navbar .logo {
@@ -256,9 +257,9 @@
   .navbar-right button {
     padding: 8px 25px;
   }
-} */
+}
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   .navbar .logo {
     width: 120px;
   }
@@ -276,10 +277,13 @@
     padding: 7px 20px;
     font-size: 15px;
   }
-}  */
+}
 
-/* @media (max-width: 750px) {
+@media (max-width: 750px) {
   .navbar-menu {
     display: none;
   }
-} */
+  .navbar .logo {
+    font-size: 2rem;
+  }
+}

@@ -42,17 +42,17 @@
   cursor: pointer;
 }
 
-:root .buttonwl {
+/* :root .buttonwl {
   color: black;
 }
 
 .lightcolors .buttonwl {
   color: #747474;
-}
+} */
 
 @media (max-width: 1050px) {
   .header-contents {
-    max-width: 45%;
+    max-width: 48%;
   }
 }
 
