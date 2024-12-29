@@ -262,6 +262,7 @@
 @media (max-width: 900px) {
   .navbar .logo {
     width: 120px;
+    font-size: 2.3rem;
   }
   .navbar-menu {
     gap: 15px;
