@@ -63,7 +63,7 @@
   top: -8px;
   right: -8px;
 }
-/* .navbar-profile {
+.navbar-profile {
   position: relative;
 }
 .nav-profile-dropdown {
@@ -84,7 +84,7 @@
   outline: 2px solid white;
   list-style: none;
 }
-
+/*
 :root .navbar-profile:hover .nav-profile-dropdown {
   color: white;
   background-color: var(--body-color);
@@ -98,7 +98,7 @@
   border: 1px solid tomato;
   outline: 2px solid white;
 }
-
+*/
 .nav-profile-dropdown li {
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@
 .nav-profile-dropdown li:hover {
   color: tomato;
 }
-
+/*
 #visual-toggle-button {
   width: 37px;
   height: 37px;
