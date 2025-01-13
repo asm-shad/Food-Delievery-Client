@@ -1,15 +1,18 @@
 import React, { useContext } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/assets";
-import { DataContext } from "../../context/dataContext";
+import { DataContext } from "../../context/DataContext";
 
 function FoodItem({ id, name, price, description, image }) {
-  //   const [itemCount, setItemCount] = useState(0);
   const { cartItems, addToCart, removeFromCart, url } = useContext(DataContext);
+
+  // Determine the correct image source
+  const imageSrc = image.startsWith("http") ? image : url + "/image/" + image;
+
   return (
     <div className="food-item">
       <div className="food-item-img-container">
-        <img className="food-item-image" src={image} alt="" />
+        <img className="food-item-image" src={imageSrc} alt="" />
         {!cartItems[id] ? (
           <img
             className="add"

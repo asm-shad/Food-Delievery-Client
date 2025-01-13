@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./FoodDisplay.css";
-import { DataContext } from "../../context/dataContext";
+import { DataContext } from "../../context/DataContext";
 import FoodItem from "../FoodItem/FoodItem";
 
 function FoodDisplay({ category }) {

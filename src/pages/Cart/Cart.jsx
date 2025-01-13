@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import { DataContext } from "../../context/dataContext";
+import { DataContext } from "../../context/DataContext";
 import { useNavigate } from "react-router-dom";
 
 function Cart() {
-  const { cartItems, food_list, removeFromCart, getTotalCartAmount } =
+  const { cartItems, food_list, removeFromCart, getTotalCartAmount, url } =
     useContext(DataContext);
   const navigate = useNavigate();
   return (
@@ -25,7 +25,15 @@ function Cart() {
             return (
               <div className="">
                 <div className="cart-items-title cart-items-item">
-                  <img src={item.image} alt="" />
+                  <img
+                    src={
+                      item.image.startsWith("http")
+                        ? item.image
+                        : url + "/images" + item.image
+                    }
+                    alt=""
+                  />
+
                   <p>{item.name}</p>
                   <p>${item.price}</p>
                   <p>{cartItems[item._id]}</p>
